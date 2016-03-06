@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.assignment.acadgild.android_session3_assignment3.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:id="@+id/TopOuterBlock"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/TopFirstBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/txtCard_Balance"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/interestRate"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/MinimumPayment"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TopSecondBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_CardBalance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextYearlyInt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextMinPmnt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:id="@+id/MidOuterBlock"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/MidFirstBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Final card Balance"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Months Remaining"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Interest Paid Will Be"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MidSecondBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_FinalBalance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/editText_MonthRemain"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/editTexInterestPaid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPUTE"
+            android:textSize="25dp"
+            android:id="@+id/cmdCompute"
+            android:layout_marginTop="20dp"
+             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:textSize="25dp"
+            android:id="@+id/cmdClear"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+</LinearLayout>
